@@ -1,7 +1,7 @@
 Playing Game Common
 ===================
 
-Game common for playful applications.
+Game common utilites for building playful applications.
 
 # Usage
 
