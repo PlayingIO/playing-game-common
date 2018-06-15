@@ -20,6 +20,6 @@ GameEntity.expose('metadata', (obj, options) => {
   return fp.sortKeys(obj.metadata);
 });
 
-GameEntity.excepts('destroyedAt');
+GameEntity.excepts('_id');
 
 export default GameEntity.asImmutable();
