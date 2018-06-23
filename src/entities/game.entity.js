@@ -22,4 +22,4 @@ GameEntity.expose('metadata', (obj, options) => {
 
 GameEntity.discard('_id');
 
-export default GameEntity.asImmutable();
+export default GameEntity.freeze();
