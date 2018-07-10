@@ -4,7 +4,7 @@ import path from 'path';
 
 // load all entities
 const entityFiles = glob.sync(path.join(__dirname, './*.entity.js'));
-export default Object.assign({}, ...entityFiles.map(file => {
+module.exports = Object.assign({}, ...entityFiles.map(file => {
   const name = camelCase(path.basename(file, '.entity.js'));
-  return { [name]: require(file).default };
+  return { [name]: require(file) };
 }));

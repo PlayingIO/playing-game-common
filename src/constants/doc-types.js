@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   game: {
     "type":"Game",
     "packages": "playing-game-elements",
