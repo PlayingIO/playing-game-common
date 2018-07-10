@@ -1,5 +1,5 @@
-import DocTypes from './constants/doc-types';
-import GameEntity from './entities/game.entity';
+const DocTypes = require('./constants/doc-types');
+const GameEntity = require('./entities/game.entity');
 
 module.exports = {
   DocTypes,

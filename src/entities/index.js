@@ -1,6 +1,6 @@
-import { camelCase } from 'mostly-func';
-import glob from 'glob';
-import path from 'path';
+const { camelCase } = require('mostly-func');
+const glob = require('glob');
+const path = require('path');
 
 // load all entities
 const entityFiles = glob.sync(path.join(__dirname, './*.entity.js'));
