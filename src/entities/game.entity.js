@@ -9,14 +9,14 @@ const GameEntity = new Entity('Game', {
 
 GameEntity.expose('metadata', (obj, options) => {
   obj.metadata = obj.metadata || {};
-  
+
   const Types = options.DocTypes || DocTypes;
 
   if (Types[obj.type]) {
     obj.metadata.facets = Types[obj.type].facets;
     obj.metadata.packages = Types[obj.type].packages;
   }
-  
+
   return fp.sortKeys(obj.metadata);
 });
 
